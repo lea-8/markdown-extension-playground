@@ -1,0 +1,32 @@
+<script>
+    import Readme from '../readme.md'
+    import Chart from '../lib/components/Chart.svelte';
+
+    let x = 5
+</script>
+
+# Here’s a chart
+
+The chart is rendered inside our MDsveX document.
+
+{x}
+
+<Chart />
+
+<Readme />
+
+Let's first try out some more functionality.
+
+## Pretty formatting with smartypants:
+"They said it was free..."
+
+Notice the elipses and the quotes! Also -- nice dash formatting.
+
+And an even longer one --- now --- 
+*Note: tripple dashes `---` does not seem to be working at the moment*
+
+# Let's assume you want a specific chart...
+Take a look [here](./report/)
+
+**This page was written in Markdown with a little help from mdsvex!**
+
