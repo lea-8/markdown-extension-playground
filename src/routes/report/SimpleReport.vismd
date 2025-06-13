@@ -1,5 +1,8 @@
 <script>
     import Bar from '../../lib/components/Bar.svelte';
+
+    export let data="";
+    console.log("data at SimpleReport.vismd:", data.flowers[0].sepalLength);
 </script>
 
 1. [ ] `TODO` *We will dynamically create a `Header` component, to make sure it's fully functional and always up-to-date.*
@@ -16,12 +19,16 @@ We need a bar chart to show something...
 
 ---
 
-<Bar />
+<Bar data={data} />
 
 ---
 
 2. [ ] `TODO` *Later will include some code to make these into nice-looking widgets.*
 
-## Side-to-side comparison
+## Let's think about parameterising these charts smoothly.
+<!-- <Bar data={data} x="sepalWidth" y=petalWidth /> -->
+<Bar data={data} xP="sepalWidth" yP="petalWidth" /> 
+
+## Interesting layouts?
 
 Let's return [home](../)
