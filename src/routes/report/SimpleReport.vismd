@@ -1,22 +1,26 @@
 <script>
-    import ScatterPlot from '../../lib/components/ScatterPlot.svelte';
+    import Bar from '../../lib/components/Bar.svelte';
 </script>
 
-1. [ ] *TODO We will dynamically create a `Header` component, to make sure it's fully functional and always up-to-date.*
+1. [ ] `TODO` *We will dynamically create a `Header` component, to make sure it's fully functional and always up-to-date.*
 
-# Report for Whitehaven
-Small town in north-west England.
+# Report for Edinburgh City
+Capital of Scotland
 
 | Stat Name   | Value       |
 | ----------- | ----------- |
-| Population  | 15,000     |
+| Population  | 500,000     |
 | Savings     | £ 1,000     |
 
-We need a scatterplot to show something...
+We need a bar chart to show something...
 
-<ScatterPlot />
+---
 
-2. [ ] *Later will include some code to make these into nice-looking widgets.*
+<Bar />
+
+---
+
+2. [ ] `TODO` *Later will include some code to make these into nice-looking widgets.*
 
 ## Side-to-side comparison
 
