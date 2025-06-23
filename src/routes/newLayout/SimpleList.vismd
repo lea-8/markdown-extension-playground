@@ -1,0 +1,35 @@
+<script>
+  import StaticChart from '../../lib/components/StaticChart.svelte';
+</script>
+
+<style>
+  .custom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+  .row {
+    display: flex;
+    gap: 1rem;
+  }
+  .column {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+</style>
+<!-- TODO: move this into a .svelte default layout --->
+
++ Left
+
++ Middle  
+
++ Right
+
+
+
++ Left
+
++ Middle  
+
++ Right

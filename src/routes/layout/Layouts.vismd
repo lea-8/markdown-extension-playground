@@ -1,0 +1,18 @@
+---
+layout: simpleheader
+title: hi
+author: Lea
+date: 18/06/2025
+---
+
+<!-- <Layout title="boo" author="Neo" date="12/12/12"/> -->
+
+More text...
+
+<!-- <slot name="default" >default</slot>  -->
+<!-- this line makes no difference -->
+
+
+Fallback layout used [here](../fallback)
+
+Let's return [home](../)

@@ -1,0 +1,14 @@
+---
+title: Fallback layout used!
+author: Lea
+date: 18/06/2025
+---
+
+<!-- <Layout title="boo" author="Neo" date="12/12/12"/> -->
+
+More text...
+
+<!-- <slot name="default" >default</slot>  -->
+<!-- this line makes no difference -->
+
+Let's return [home](../)

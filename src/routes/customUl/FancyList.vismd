@@ -1,0 +1,16 @@
+<!-- ---
+title: "Fancy List Test"
+layout: fancylist
+- hihihi
+--- -->
+
+<!-- <script>
+  import * as Components from '../../lib/components/FancyList.svelte';
+</script>
+
+## Trying out custom components:
+<Components.ul>
+- First item
+- Second item
+- Third item
+</Components.ul> -->

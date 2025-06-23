@@ -1,4 +1,14 @@
+---
+title: Simple Report: Edinburgh
+data_path: "TODO/TODO.csv"
+# count: 25
+# color: cadetblue
+# list: [1, 2, 3, 4, "boo"]
+layout: false
+---
+
 <script>
+    import StaticChart from '../../lib/components/StaticChart.svelte';
     import Bar from '../../lib/components/Bar.svelte';
 
     export let data="";
@@ -19,7 +29,7 @@ We need a bar chart to show something...
 
 ---
 
-<Bar data={data} />
+<StaticChart />
 
 ---
 
@@ -29,6 +39,10 @@ We need a bar chart to show something...
 <!-- <Bar data={data} x="sepalWidth" y=petalWidth /> -->
 <Bar data={data} xP="sepalWidth" yP="petalWidth" /> 
 
-## Interesting layouts?
+## Basic layouts?
+Let's [hava a look](../layout)
+
+## User-defined layouts?
+Let's [try](../newLayout)
 
 Let's return [home](../)

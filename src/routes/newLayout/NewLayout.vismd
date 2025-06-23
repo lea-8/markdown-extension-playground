@@ -1,0 +1,114 @@
+<script>
+    import Grid from '../../lib/components/Grid.svelte';
+    import Cell from '../../lib/components/Cell.svelte';
+
+    import GridBlock from '../../lib/components/GridBlock.svelte';
+    import LayoutComponent from '../../lib/components/LayoutComponent.svelte';
+</script>
+
+# Hi again
+Let's try to create non-linear layouts...
+
+<!--## The most basic approach
+Simplistic HTML style.
+
+<Grid columns={3} gap={1.5}>
+  <Cell>
+  This is the first cell.
+  </Cell>
+
+  <Cell>
+  This is the second cell.
+  </Cell>
+
+  <Cell>
+  And this is the third.
+  </Cell>
+</Grid>
+
+<Grid columns={2} gap={1.5}>
+  <Cell>
+  This is the left-hand cell.
+  </Cell>
+
+  <Cell>
+    <Grid columns={2} gap={1.5}>
+      <Cell>
+        NESTED left-hand cell.
+      </Cell>
+
+      <Cell>
+        NESTED right-hand cell.
+      </Cell>
+    </Grid>
+  </Cell>
+</Grid>
+
+## A more user-friendly approach
+Imagine typing this:
+
+```markdown
++ Left
+
++ Middle  
+
++ Right
+
+  + N1 L
+
+  + N1 R
+
+
++ Left  
+
++ Right
+```
+
+
+And then seeing:
++ Left
++ Middle  
++ Right
+  + N1 L
+  + N1 R
+
+
++ Left  
++ Right -->
+
+
++ Left
+
++ Middle  
+
++ Right
+
+
++ Left  
+
++ Right
+
+
+<!-- - ignore
+- because 
+- diff types
+
+
+* ignore
+* because 
+* diff types -->
+
+<!-- <GridBlock>
+:::grid columns=2 gap=2
+:::cell
+**First cell**  
+Markdown works here!
+:::
+
+:::cell
+Second cell here.
+:::
+:::
+</GridBlock> -->
+
+Let's return [home](../)

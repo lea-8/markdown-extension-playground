@@ -7,7 +7,7 @@
 
 <SimpleRport data={data} />
 
-{data.flowers}
+<!-- {data.flowers} -->
 
 
 <!-- <h2>wa?</h2> -->

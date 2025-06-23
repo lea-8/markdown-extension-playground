@@ -1,0 +1,22 @@
+
+
+<script>
+  import { metadata } from "./metadata.js";
+</script>
+
+# {metadata.title} by {metadata.author}
+
+Some amazing content.
+
+```javascript
+console.log(
+  "help"
+);
+```
+
+<div style="border: solid 1em;">
+    <h1>hi</h1>
+<pre>
+console.log("help");
+</pre>
+</div>
