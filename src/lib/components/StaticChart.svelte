@@ -32,5 +32,5 @@
 <h2>Using static data</h2>
 <div id="sta" bind:this={div} role="img"></div>
 
-<h2>Using dynamic data</h2>
-<div id="dyn" bind:this={dyn} role="img"></div>
+<!-- <h2>Using dynamic data</h2>
+<div id="dyn" bind:this={dyn} role="img"></div> -->

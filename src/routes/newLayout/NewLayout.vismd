@@ -8,6 +8,7 @@ date: 24/06/2025
     import Grid from '../../lib/components/Grid.svelte';
     import Cell from '../../lib/components/Cell.svelte';
 
+    import StaticChart from '../../lib/components/StaticChart.svelte';
     import Widget from '../../lib/components/Widget.svelte';
 
     import '../../global.css';
@@ -127,6 +128,14 @@ Now that's better.
 - not 
 - spread
 
++ Not
+
++ Too
+
++ Shabby
+
++ :)
+
 ### More complicated contents
 In order to encode more complex contents, the remark plugin has to not only find the correct elements in the AST tree, but also now needs to also traverse the subtree to collect and place the correct items in the correct location.
 
@@ -153,7 +162,8 @@ Graph!
   1. A
   2. List
 
-  Graph!
+  <StaticChart />
+  ### A graph!
 
   </Widget>
 
