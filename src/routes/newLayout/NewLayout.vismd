@@ -1,17 +1,60 @@
+---
+title: Hi again
+author: Lea
+date: 24/06/2025
+---
+
 <script>
     import Grid from '../../lib/components/Grid.svelte';
     import Cell from '../../lib/components/Cell.svelte';
 
-    import GridBlock from '../../lib/components/GridBlock.svelte';
-    import LayoutComponent from '../../lib/components/LayoutComponent.svelte';
+    import Widget from '../../lib/components/Widget.svelte';
+
+    import '../../global.css';
 </script>
 
-# Hi again
+<!-- # Hi again -->
 Let's try to create non-linear layouts...
 
-<!--## The most basic approach
+## The most basic approach
 Simplistic HTML style.
 
+<Grid columns={3} gap={1.5}>
+  <Cell>
+  This is the first cell.
+  </Cell>
+
+  <Cell>
+  This is the second cell.
+  </Cell>
+
+  <Cell>
+  And this is the third.
+  </Cell>
+</Grid>
+
+<Grid columns={2} gap={1.5}>
+  <Cell>
+  This is the left-hand cell.
+  </Cell>
+
+  <Cell>
+    This is the righ-hand cell. But now with additional elements!
+    <Grid columns={2} gap={1.5}>
+      <Cell>
+        NESTED left-hand cell.
+      </Cell>
+
+      <Cell>
+        NESTED right-hand cell.
+      </Cell>
+    </Grid>
+  </Cell>
+</Grid>
+
+But typing:
+
+```javascript
 <Grid columns={3} gap={1.5}>
   <Cell>
   This is the first cell.
@@ -43,6 +86,8 @@ Simplistic HTML style.
     </Grid>
   </Cell>
 </Grid>
+```
+Might be tedious.
 
 ## A more user-friendly approach
 Imagine typing this:
@@ -54,10 +99,6 @@ Imagine typing this:
 
 + Right
 
-  + N1 L
-
-  + N1 R
-
 
 + Left  
 
@@ -67,48 +108,61 @@ Imagine typing this:
 
 And then seeing:
 + Left
+
 + Middle  
+
 + Right
-  + N1 L
-  + N1 R
-
-
-+ Left  
-+ Right -->
 
 
 + Left
 
++ Right
+
+Now that's better.
+
+* These lists
+* will
++ ignore
++ because
+- not 
+- spread
+
+### More complicated contents
+In order to encode more complex contents, the remark plugin has to not only find the correct elements in the AST tree, but also now needs to also traverse the subtree to collect and place the correct items in the correct location.
+
+Let's embed the following widget:
+```markdown
+<Widget>
+
+## Title
+
+*Explanation.*
+1. A
+2. List
+
+Graph!
+
+</Widget>
+```
+
++ <Widget>
+
+  ## Title
+
+  *Explanation.*
+  1. A
+  2. List
+
+  Graph!
+
+  </Widget>
+
 + Middle  
 
 + Right
 
+## But what about nested layouts...
+Please stay patient, we're working on this.
 
-+ Left  
-
-+ Right
-
-
-<!-- - ignore
-- because 
-- diff types
-
-
-* ignore
-* because 
-* diff types -->
-
-<!-- <GridBlock>
-:::grid columns=2 gap=2
-:::cell
-**First cell**  
-Markdown works here!
-:::
-
-:::cell
-Second cell here.
-:::
-:::
-</GridBlock> -->
 
 Let's return [home](../)

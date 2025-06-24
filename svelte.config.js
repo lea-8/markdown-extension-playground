@@ -4,8 +4,8 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createHighlighter } from 'shiki';
 import adapter from '@sveltejs/adapter-static';
+// import remarkWidget from './plugins/remark-widgets.js';
 import remarkGrid from './plugins/remark-grid.js';
-
  
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
