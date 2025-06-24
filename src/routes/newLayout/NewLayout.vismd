@@ -149,7 +149,8 @@ Let's embed the following widget:
 1. A
 2. List
 
-Graph!
+<StaticChart />
+### A graph!
 
 </Widget>
 ```
