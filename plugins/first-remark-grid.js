@@ -1,7 +1,7 @@
 // plugins/remark-grid.js
 import {visit} from 'unist-util-visit';
 
-export default function remarkGrid() {
+export default function firstRemarkGrid() {
   return (tree, file) => {
 
     visit(tree, function (node, index, parent, ancestors) {

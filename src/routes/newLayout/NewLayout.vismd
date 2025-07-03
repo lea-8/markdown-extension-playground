@@ -155,6 +155,20 @@ Let's embed the following widget:
 </Widget>
 ```
 
+<Widget>
+
+## Title
+
+*Explanation.*
+1. A
+2. List
+
+<StaticChart />
+
+### A graph!
+
+</Widget>
+
 + <Widget>
 
   ## Title
@@ -164,6 +178,7 @@ Let's embed the following widget:
   2. List
 
   <StaticChart />
+  
   ### A graph!
 
   </Widget>

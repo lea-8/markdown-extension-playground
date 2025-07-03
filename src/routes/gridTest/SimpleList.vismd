@@ -1,0 +1,52 @@
+<script>
+  import StaticChart from '../../lib/components/StaticChart.svelte';
+  import Widget from '../../lib/components/Widget.svelte';
+
+  import '../../global.css';
+</script>
+
++ A
+
++ Grid
+
++ please
+  + nested
+  + Not
+
+<!-- + <Widget>
+
+  # Hi there!
+  
+  </Widget>
+
++ <Widget>
+  *Another list - no grid*
+  + Help?
+  + Me?
+  </Widget>   -->
+
+<!-- + **Only markdown** -->
+  <!-- | and   |   a   |
+  |-------|-------|
+  | small | table | -->
+  <!-- Maybe tables should just be a Svelte elem.... -->
+
+<!-- + A
+  + Nested
+
+  + Grid? -->
+
+
++ Left
++ Right ignore
++ **Only markdown**
+  <!-- | and   |   a   |
+  |-------|-------|
+  | small | table | -->
+  Maybe tables should just be a Svelte elem....
+
+<!-- + *Only markdown*
+
+  | and   |   a   |
+  |-------|-------|
+  | small | table | -->
