@@ -2,51 +2,24 @@
   import StaticChart from '../../lib/components/StaticChart.svelte';
   import Widget from '../../lib/components/Widget.svelte';
 
+  import Grid from '$lib/components/Grid.svelte';
+  import Row from '$lib/components/Row.svelte';
+  import Column from '$lib/components/Column.svelte';
+
   import '../../global.css';
 </script>
 
-+ A
+# My grid example
 
-+ Grid
++ Left *cell*
 
-+ please
-  + nested
-  + Not
++ Middle with **bold**
 
-<!-- + <Widget>
++ Right cell
 
-  # Hi there!
-  
-  </Widget>
+  - nested list
 
-+ <Widget>
-  *Another list - no grid*
-  + Help?
-  + Me?
-  </Widget>   -->
+  - items
 
-<!-- + **Only markdown** -->
-  <!-- | and   |   a   |
-  |-------|-------|
-  | small | table | -->
-  <!-- Maybe tables should just be a Svelte elem.... -->
-
-<!-- + A
-  + Nested
-
-  + Grid? -->
-
-
-+ Left
-+ Right ignore
-+ **Only markdown**
-  <!-- | and   |   a   |
-  |-------|-------|
-  | small | table | -->
-  Maybe tables should just be a Svelte elem....
-
-<!-- + *Only markdown*
-
-  | and   |   a   |
-  |-------|-------|
-  | small | table | -->
+- Normal list item 1
+- Normal list item 2

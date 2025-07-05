@@ -1,0 +1,48 @@
+<script>
+  import StaticChart from '../../lib/components/StaticChart.svelte';
+  import Widget from '../../lib/components/Widget.svelte';
+
+  import '../../global.css';
+</script>
+
+# Big big title
+
++ <Widget>
+
+  This is a chart of the weather in France in 2023
+
+  <StaticChart />
+
+  </Widget>
+
++ <Widget>
+  *Another list - no grid*
+  + Help?
+  + Me?
+  </Widget>   -->
+
++ **Only markdown**
+  <!-- | and   |   a   |
+  |-------|-------|
+  | small | table | -->
+  Maybe tables should just be a Svelte elem....
+
++ A
+  + Nested
+
+  + Grid?
+
+
+- Left
+- Right ignore
+- **Only markdown**
+  <!-- | and   |   a   |
+  |-------|-------|
+  | small | table | -->
+  Maybe tables should just be a Svelte elem....
+
+<!-- + *Only markdown*
+
+  | and   |   a   |
+  |-------|-------|
+  | small | table | -->

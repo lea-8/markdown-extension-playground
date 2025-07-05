@@ -4,11 +4,9 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createHighlighter } from 'shiki';
 import adapter from '@sveltejs/adapter-static';
-// import remarkWidget from './plugins/remark-widgets.js';
+
 import firstRemarkGrid from './plugins/first-remark-grid.js';
-import firstRemarkGrid2 from './plugins/first-remark-grid-2.js';
-import betterRemarkGrid from './plugins/better-remark-grid.js';
-import remarkRehype from 'remark-rehype'
+
  
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -43,7 +41,7 @@ const config = {
     preprocess: [
       mdsvex({
         extensions: ['.md', '.svx', '.vismd'],
-				remarkPlugins: [firstRemarkGrid2],
+				remarkPlugins: [firstRemarkGrid],
 				highlight: {
 				highlighter: async (code, lang = 'text') => {
 					const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
